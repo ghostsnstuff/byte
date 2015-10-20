@@ -1,8 +1,8 @@
 import React from 'react';
 import assign from 'object-assign';
+import GameLayout from './components/GameLayout/GameLayout';
 
 const { Component, StyleSheet } = React;
-
 
 const backgroundColors = [
   '#8BD47D', // green
@@ -15,7 +15,7 @@ const backgroundColors = [
 
 export default class Main extends Component {
 
-  handleMobile () {
+  onMobileUI () {
     if (window.innerWidth <= 475) {
       styles.container.paddingTop = null;
     }
@@ -27,36 +27,13 @@ export default class Main extends Component {
 
   render () {
 
-    this.handleMobile();
+    this.onMobileUI();
 
     return (
       <div style={styles.container} className="container">
-
-        {/*<main style={styles.main} className="row">
-          <div style={styles.header} className="row">
-            <span style={styles.logo}>Byte</span>
-          </div>
-          <div style={styles.navigation} className="row">
-            <div style={styles.flexcontainerRow}>
-              <span style={styles.widget}><a style={styles.a} href="/">New Game</a></span>
-              <span style={styles.widget}>High: 0</span>
-              <span style={styles.widget}><a style={styles.a} href="#howToPlay">?</a></span>
-            </div>
-          </div>
-          <div style={assign({}, styles.binaryStringContainer, styles.flexcontainerRow)} className="row">
-            <span style={styles.binaryString}>00101001</span>
-          </div>
-          <div style={assign({}, styles.GameLaoutContainer, styles.flexcontainerRow)} className="row">
-            <span style={styles.equals}>=</span>
-            <input className="form-control" type="text" name="answer" style={styles.textField} />
-          </div>
-          <div style={assign({}, styles.statsOuterContainer, styles.flexcontainerRow)} className="row">
-            <span style={styles.stat}>
-              30.0 s
-            </span>
-            <span style={styles.stat}>Score: 0</span>
-          </div>
-        </main>*/}
+        {/* Game UI */}
+        <GameLayout />
+        {/* Content */}
         <section className="row" style={{ fontFamily: 'courier', padding: 20, maxWidth: 400, margin: '0 auto', border: '0x solid'}}>
           <div style={{ fontSize: 28 }}>
             <span><a name="howToPlay" style={{ color: '#000', textDecoration: 'none' }}>How to Play</a></span>
