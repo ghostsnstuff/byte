@@ -74,7 +74,7 @@ export default class Main extends Component {
               </li>
               <li style={styles.li}>
                 <span style={{ fontWeight: 'bold', letterSpacing: 3 }}>Gameplay</span>
-                <div style={styles.content}>Translate 8-bit binary numbers into their integer equivalent as many times as possible in 30 seconds.</div>
+                <div style={styles.content}>Translate 8-bit binary numbers into their decimal equivalent as many times as possible in 30 seconds.</div>
                 <div style={styles.content}>For each correct answer your points increase by 2^n (0 to 1 to 2 to 4 to 8 etc).</div>
                 <div style={styles.content}>When you get to 2048 points, you win! (original)</div>
               </li>
