@@ -102,7 +102,7 @@ export default class Main extends Component {
               <div style={{ fontSize: 16, paddingBottom: 15 }}>The game was made for fun by <a target="_new" style={styles.hyperlink} href="http://whoami.pizza">me</a> (isb).</div>
               <div style={{ fontSize: 16, paddingBottom: 15 }}>
                 <a target="_new" href="https://github.com/ghostsnstuff/byte">
-                  <img src="file:///Users/jaredhalpert/Downloads/GitHub-Mark/PNG/GitHub-Mark-32px.png" />
+                  <img src="http://cdn.flaticon.com/png/256/25231.png" height="40" width="40" />
                 </a>
               </div>
               <div style={{ fontSize: 16, paddingBottom: 15, border: '0px solid' }}>
