@@ -96,9 +96,18 @@ export default class Main extends Component {
           <div style={{ fontSize: 28 }}>
             <span>About</span>
             <section style={{ paddingTop: 10 }}>
-              <div style={{ fontSize: 16, paddingBottom: 15 }}><span style={styles.byte}>Byte</span> was designed and built at <a target="_new" style={styles.hyperlink} href="https://facebook.com/hubsycafe">hubsy</a> in Paris, France where coffee makes everything possible.</div>
+              <div style={{ fontSize: 16, paddingBottom: 15 }}>
+                <span style={styles.byte}>Byte</span> was designed and built at <a target="_new" style={styles.hyperlink} href="https://facebook.com/hubsycafe">hubsy</a> in Paris, France where coffee makes everything possible.
+              </div>
               <div style={{ fontSize: 16, paddingBottom: 15 }}>The game was made for fun by <a target="_new" style={styles.hyperlink} href="http://whoami.pizza">me</a> (isb).</div>
-              <div style={{ fontSize: 16, paddingBottom: 15, border: '0px solid' }}><img style={{ border: '0px solid', verticalAlign: 'middle', margin: 'auto', display: 'table-cell' }} src="http://ferd.ca/static/img/printf/trashcan.png"/></div>
+              <div style={{ fontSize: 16, paddingBottom: 15 }}>
+                <a target="_new" href="https://github.com/ghostsnstuff/byte">
+                  <img src="file:///Users/jaredhalpert/Downloads/GitHub-Mark/PNG/GitHub-Mark-32px.png" />
+                </a>
+              </div>
+              <div style={{ fontSize: 16, paddingBottom: 15, border: '0px solid' }}>
+                <img style={{ border: '0px solid', verticalAlign: 'middle', margin: 'auto', display: 'table-cell' }} src="http://ferd.ca/static/img/printf/trashcan.png"/>
+              </div>
             </section>
           </div>
         </section>
