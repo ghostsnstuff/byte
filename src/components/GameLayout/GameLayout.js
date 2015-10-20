@@ -179,4 +179,5 @@ export default class GameLayout extends React.Component {
       </main>
     );
   }
+  
 };

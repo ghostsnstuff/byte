@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 var path    = require('path');
 var webpack = require('webpack');
@@ -7,8 +7,8 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'eval',
   entry: [
-    'webpack-dev-server/client?http://localhost:9000',
-    'webpack/hot/only-dev-server',
+    // 'webpack-dev-server/client?http://localhost:9000',
+    // 'webpack/hot/only-dev-server',
     './src/index'
   ],
   output: {
