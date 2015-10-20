@@ -23,7 +23,7 @@ export default class GameLayout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      binaryString: this.genRandomBinaryString(128, 0),
+      binaryString: this.genRandomBinaryString(255, 0),
       answer: '',
       score: 0,
       elapsed: 30000,
@@ -54,7 +54,7 @@ export default class GameLayout extends React.Component {
     var _state = {};
 
     if (parseInt(this.state.binaryString, 2) === Number(e.target.value)) {
-      _state.binaryString = this.genRandomBinaryString(128, 0);
+      _state.binaryString = this.genRandomBinaryString(255, 0);
       _state.answer = '';
 
       _state.score = this.state.score > 0 ? 2 * this.state.score : 1;
@@ -81,7 +81,7 @@ export default class GameLayout extends React.Component {
 
   onNewGame () {
     this.setState({
-      binaryString: this.genRandomBinaryString(128, 0),
+      binaryString: this.genRandomBinaryString(255, 0),
       isPlaying: false,
       isEditable: false,
       shouldReset: true,
@@ -112,7 +112,7 @@ export default class GameLayout extends React.Component {
 
   onStartGame () {
     this.setState({
-      binaryString: this.genRandomBinaryString(128, 0),
+      binaryString: this.genRandomBinaryString(255, 0),
       score: 0,
       answer: '',
       elapsed: 30000
@@ -179,5 +179,5 @@ export default class GameLayout extends React.Component {
       </main>
     );
   }
-  
+
 };
